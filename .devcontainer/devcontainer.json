@@ -1,0 +1,25 @@
+{
+  "name": "python-codex-dev",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "remoteUser": "vscode",
+  "workspaceFolder": "/workspace",
+  "mounts": ["source=${localWorkspaceFolder},target=/workspace,type=bind"],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true,
+        "workbench.iconTheme": "material-icon-theme"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-azuretools.vscode-docker",
+        "stackbreak.comment-divider",
+        "PKief.material-icon-theme"
+      ]
+    }
+  }
+}
