@@ -4,6 +4,11 @@
     "dockerfile": "../Dockerfile",
     "context": ".."
   },
+  "runArgs": [
+    "--security-opt=seccomp=unconfined",
+    "--security-opt=apparmor=unconfined",
+    "--cap-add=SYS_ADMIN"
+  ],
   "remoteUser": "vscode",
   "workspaceFolder": "/workspace",
   "mounts": ["source=${localWorkspaceFolder},target=/workspace,type=bind"],
