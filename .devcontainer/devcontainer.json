@@ -1,5 +1,5 @@
 {
-  "name": "python-codex-dev",
+  "name": "codex-dev",
   "build": {
     "dockerfile": "../Dockerfile",
     "context": ".."
@@ -23,7 +23,10 @@
         "ms-python.vscode-pylance",
         "ms-azuretools.vscode-docker",
         "stackbreak.comment-divider",
-        "PKief.material-icon-theme"
+        "PKief.material-icon-theme",
+        "esbenp.prettier-vscode",
+        "eamodio.gitlens",
+        "bradlc.vscode-tailwindcss"
       ]
     }
   }
